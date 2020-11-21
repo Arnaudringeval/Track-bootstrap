@@ -28,10 +28,37 @@ header {
     flex-direction: column-reverse;
     justify-content: center;
     background-color: #cdcdcd;
-    padding: 0 7px 0 0;
+    padding: 0 0 0 0;
     z-index: 7;
     color: #318ce7;
     width: 100%;
+}
+
+.dropdown-menu {
+    background-color: #cdcdcd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbarDropdownMenuLink {
+    padding: 0;
+}
+
+.dropdown-item {
+    color: #ffffff;
+}
+
+.dropdown-menu {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+.navbar-toggler-icon {
+    color: #ffffff;
 }
 
 #navbar {
@@ -40,6 +67,7 @@ header {
     left: 0;
     padding: 0 0 0 0;
     background-color: #cdcdcd;
+    color: #ffffff;
 }
 
 #titrea {
