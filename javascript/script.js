@@ -42,3 +42,12 @@ function footer() {
         document.getElementsById('footeraccueil').style.position = 'absolute'
     }
 }
+
+function menu() {
+    if (document.getElementsByName('aria-expanded').innerHTML == 'true') {
+        document.getElementById('navbar-toggler-icon').style.background - image = 'url(images/menuf.png)'
+    } else {
+        document.getElementById('navbar-toggler-icon').style.background - image = 'url(images/menu.png)'
+    }
+
+}
