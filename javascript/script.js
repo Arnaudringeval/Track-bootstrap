@@ -44,10 +44,10 @@ function footer() {
 }
 
 function menu() {
-    if (document.getElementsByName('aria-expanded').innerHTML == 'true') {
-        document.getElementById('navbar-toggler-icon').style.background - image = 'url(images/menuf.png)'
+    if (document.getElementsByName('aria-expanded').innerHTML === 'true') {
+        document.getElementById('navbar-toggler-icon').style.background = 'url(images/menuf.png)'
     } else {
-        document.getElementById('navbar-toggler-icon').style.background - image = 'url(images/menu.png)'
+        document.getElementById('navbar-toggler-icon').style.background = 'url(images/menu.png)'
     }
 
 }
