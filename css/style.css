@@ -16,6 +16,7 @@
     width: 369px;
     height: 238px;
     margin-top: -40px;
+    margin-left: -1000px;
 }
 
 .brand {
@@ -66,13 +67,16 @@ header {
     top: 0;
     left: 0;
     padding: 0 0 0 0;
-    background-color: #cdcdcd;
     color: #ffffff;
+}
+
+#navbarNavDropdown {
+    background-color: #cdcdcd;
 }
 
 #titrea {
     font-size: 75px;
-    margin: 0 0 0 35px;
+    margin: 0 0 0 1035px;
 }
 
 h1 {
