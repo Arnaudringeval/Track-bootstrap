@@ -27,9 +27,6 @@ $('#titrea').animate({
 
 
 
-
-
-
 function cache() {
     if (document.getElementById('changer').innerHTML == 'vidéo') {
         document.getElementById('changer').innerHTML = 'texte';
