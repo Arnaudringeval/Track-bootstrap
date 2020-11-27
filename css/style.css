@@ -19,6 +19,17 @@
     margin-left: -1000px;
 }
 
+#logolien {
+    order: 1;
+    align-self: center;
+}
+
+#logob {
+    width: 369px;
+    height: 238px;
+    margin: 0px 0 0px 0;
+}
+
 .brand {
     text-align: center;
 }
@@ -81,7 +92,17 @@ header {
 
 #titrea {
     font-size: 75px;
-    margin: 0 0 0 1035px;
+    margin: -10px 0 0 1035px;
+}
+
+#titreb {
+    display: none;
+    font-size: 75px;
+}
+
+.accueil {
+    text-decoration: none;
+    color: #318ce7;
 }
 
 h1 {
@@ -124,4 +145,199 @@ h1 {
 
 .nameb {
     display: block;
+}
+
+#intro {
+    background-color: #318ce7bf;
+    position: absolute;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px;
+    display: block;
+    min-height: 400px;
+    color: #ffffff;
+}
+
+p {
+    padding: 10px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: normal;
+}
+
+.playlist {
+    width: 100%;
+    height: 400px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#footeraccueil {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 5px;
+}
+
+#enveloppe {
+    width: 38px;
+    height: auto;
+}
+
+#youtube {
+    width: 38px;
+    height: auto;
+    margin: 0 5px 0 5px;
+}
+
+#face {
+    width: 29px;
+    height: auto;
+}
+
+#changer {
+    background-color: #318ce7;
+    position: absolute;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 2px 5px 0px 5px;
+    margin: -20px 0 0 0;
+    right: 0;
+    color: #ffffff;
+    border: 0 solid;
+    width: 55px;
+    line-height: normal;
+}
+
+main {
+    z-index: 0;
+    margin: 310px 5px 0 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.maina,
+#mainb {
+    z-index: 0;
+    margin: 400px 0 0 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 40px;
+}
+
+.maina {
+    margin: 400px 0 0 0;
+}
+
+.mainb {
+    margin: 435px 0 0 0;
+    bottom: 40px;
+}
+
+img {
+    margin: 0 auto 0 auto;
+    width: 365px;
+    height: auto;
+}
+
+.intromoteurs {
+    padding: 10px 0 0 0;
+    margin: 0px auto 0 auto;
+    width: 365px;
+}
+
+#article1,
+#article2 {
+    display: none;
+}
+
+#baybee,
+#hw10bl120 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+}
+
+#titrearticle {
+    margin: 20px 0 0 0;
+    font-size: 25px;
+    color: #318ce7;
+    text-align: center;
+    font-weight: bold;
+}
+
+#montrer,
+#montrer2 {
+    background-color: #318ce7;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    margin: 0 auto 0 auto;
+    color: #ffffff;
+    width: 365px;
+    border: 0 solid;
+}
+
+.lientexte {
+    font-style: italic;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#envoieform {
+    background-color: #cdcdcd;
+    border-radius: 10px;
+    border: 0 solid;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 0 0 auto;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75)
+}
+
+#formulaire {
+    z-index: 0;
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 40px;
+    width: 200px;
+}
+
+#nom {
+    padding: 5px 0 5px 0;
+    border: 0 solid;
+}
+
+#email {
+    padding: 5px 0 5px 0;
+    border: 0 solid;
+}
+
+#sujet {
+    padding: 5px 0 5px 0;
+    border: 0 solid;
+}
+
+#message {
+    padding: 5px 0 0 0;
+    border: 0 solid;
+}
+
+.form {
+    padding: 8px 0 0 0;
 }

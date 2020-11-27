@@ -25,14 +25,9 @@ $('#titrea').animate({
 }, 500)
 
 
-$('#navbar').click(function() {
+$('#dropback').click(function() {
     $('.navbar').toggleClass('couleur');
-    $('.navbar-toggler-icon').toggleClass('imgback');
 })
-
-
-
-
 
 
 
@@ -75,21 +70,4 @@ function intro() {
     if (window.innerWidth < 1024 && window.innerWidth > 690) {
         document.getElementById('intro').style.display = 'block'
     }
-}
-
-function footer() {
-    if (window.innerheight > document.body.clientHeight) {
-        document.getElementsById('footeraccueril').style.position = 'fixed'
-    } else {
-        document.getElementsById('footeraccueil').style.position = 'absolute'
-    }
-}
-
-function menu() {
-    if (document.getElementsByName('aria-expanded').innerHTML === 'true') {
-        document.getElementById('navbar-toggler-icon').style.background = 'url(images/menuf.png)'
-    } else {
-        document.getElementById('navbar-toggler-icon').style.background = 'url(images/menu.png)'
-    }
-
 }

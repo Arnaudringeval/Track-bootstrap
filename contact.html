@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nous contacter</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="icon" href="images/favicon.ico" />
 </head>
+
 <body>
     <header>
         <a id="logolien" href="index.html"><img id="logob" src="images/logo_track.png" alt=""></a>
@@ -16,119 +18,75 @@
             <h3 id="h3autre">Formulaire de contact</h3>
         </div>
     </header>
-    
-    
+
+
     <nav>
-        <div id="menu1">
-            <div id="menuToggle">
-            <!--
-            A fake / hidden checkbox is used as click reciever,
-            so you can use the :checked selector on it.
-            -->
-            <input type="checkbox" />
-            
-            <!--
-            Some spans to act as a hamburger.
-            
-            They are acting like a real hamburger,
-            not that McDonalds stuff.
-            -->
-            <span></span>
-            <span></span>
-            <span></span>
-            
-            <!--
-            Too bad the menu has to be inside of the button
-            but hey, it's pure CSS magic.
-            -->
-            <ul id="menu">
-                <li>les bases
-                    <ul>
-                        <li><a href="motorisation.html">motorisation</a></li>
-                        <li><a href="transmission.html">transmission</a></li>
-                        <li><a href="pneus.html">pneus</a></li>
-                        <li><a href="carrosseries.html">carrosseries</a></li>
-                        <li><a href="reglages.html">réglages</a></li>
-                    </ul>
-                </li>
-                <li id="regl">réglements
-                    <ul id="réglements">
-                        <li id="ffvrc"><a href="https://www.ffvrc.fr/fr/disciplines-sur-piste/1-10-1-12-electrique-piste/356-rglt.html" target="_blank">FFVRC</a></li>
-                        <li><a href="https://www.efra.ws/handbook/" target="_blank">EFRA</a></li>
-                        <li><a href="https://ets.redrc.net/rules/" target="_blank">ETS</a></li>
-                        <li><a href="https://www.ifmar.org/rules/" target="_blank">IFMAR</a></li>
-                    </ul>
-                </li>
-                <li><a href="tutos.html">tutos</a>
-        
-                </li>
-                <li>vidéos
-                    <ul>
-                        <li><a href="championnatdumonde.html">Championnat du monde</a></li>
-                        <li><a href="championnatdeurope.html">Chapionnat d'Europe</a></li>
-                        <li><a href="ets.html">ETS</a></li>
-                        <li><a href="autres.html">Autres</a></li>
-                    </ul>
-    
-                </li>
-                <li><a href="calendrier.html">calendrier</a>
-    
-                </li>
-            </ul>
+        <div id="navbar" class="navbar navbar-expand-lg navbar-dark">
+            <button id="dropback" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="navbar-toggler-icon" class="navbar-toggler-icon" style="background-image:url(images/menu.png);"></span>
+        </button>
+            <div class="collapse navbar-collapse pl-3" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <div class="dropright active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les Bases<span class="sr-only">(current)</span></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" x-placement="right-start" style="position: absolute; transform: translate3d(111px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <a class="dropdown-item" href="motorisation.html">motorisation</a>
+                                <a class="dropdown-item" href="transmission.html">transmission</a>
+                                <a class="dropdown-item" href="pneus.html">pneus</a>
+                                <a class="dropdown-item" href="carrosseries.html">carrosseries</a>
+                                <a class="dropdown-item" href="reglages.html">réglages</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item active">
+                        <div class="dropright active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">réglements<span class="sr-only">(current)</span></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" x-placement="right-start" style="position: absolute; transform: translate3d(111px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <a class="dropdown-item" href="https://www.ffvrc.fr/fr/disciplines-sur-piste/1-10-1-12-electrique-piste/356-rglt.html">FFVRC</a>
+                                <a class="dropdown-item" href="https://www.efra.ws/handbook/" target="_blank">EFRA</a>
+                                <a class="dropdown-item" href="https://ets.redrc.net/rules/" target="_blank">ETS</a>
+                                <a class="dropdown-item" href="https://www.ifmar.org/rules/" target="_blank">IFMAR</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="tutos.html">tutos</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <div class="dropright active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">vidéos<span class="sr-only">(current)</span></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" x-placement="right-start" style="position: absolute; transform: translate3d(111px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <a class="dropdown-item" href="championnatdumonde.html">Championnat du monde</a>
+                                <a class="dropdown-item" href="championnatdeurope.html">Chapionnat d'Europe</a>
+                                <a class="dropdown-item" href="ets.html">ETS</a>
+                                <a class="dropdown-item" href="autres.html">Autres</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="calendrier.html">calendrier</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    
-        
-        <ul id="menus">
-            <li>les bases
-                <ul>
-                    <li><a href="motorisation.html">motorisation</a></li>
-                    <li><a href="transmission.html">transmission</a></li>
-                    <li><a href="pneus.html">pneus</a></li>
-                    <li><a href="carrosseries.html">carrosseries</a></li>
-                    <li><a href="reglages.html">réglages</a></li>
-                </ul>
-            </li>
-            <li id="regl">réglements
-                <ul id="réglements">
-                    <li id="ffvrc"><a href="https://www.ffvrc.fr/fr/disciplines-sur-piste/1-10-1-12-electrique-piste/356-rglt.html" target="_blank">FFVRC</a></li>
-                    <li><a href="https://www.efra.ws/handbook/" target="_blank">EFRA</a></li>
-                    <li><a href="https://ets.redrc.net/rules/" target="_blank">ETS</a></li>
-                    <li><a href="https://www.ifmar.org/rules/" target="_blank">IFMAR</a></li>
-                </ul>
-            </li>
-            <li><a href="tutos.html">tutos</a>
-    
-            </li>
-            <li>vidéos
-                <ul>
-                    <li><a href="championnatdumonde.html">Championnat du monde</a></li>
-                    <li><a href="championnatdeurope.html">Chapionnat d'Europe</a></li>
-                    <li><a href="ets.html">ETS</a></li>
-                    <li><a href="autres.html">Autres</a></li>
-                </ul>
-
-            </li>
-            <li><a href="calendrier.html">calendrier</a>
-
-            </li>
-        </ul>
     </nav>
     <div class="maina">
         <div id="formulaire">
             <label class="form" for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" required>
+            <input type="text" id="nom" name="nom" required>
             <label class="form" for="email">email</label>
-                <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required>
             <label class="form" for="sujet">Sujet</label>
-                <input type="text" id="sujet" name="sujet" required>
+            <input type="text" id="sujet" name="sujet" required>
             <label class="form" for="message">Message</label>
-                <textarea name="message" id="message" rows="10" required></textarea>
-            <input id="envoieform" type="submit" value="Envoyer"/>
+            <textarea name="message" id="message" rows="10" required></textarea>
+            <input id="envoieform" type="submit" value="Envoyer" />
         </div>
     </div>
 
-    <footer id="footeraccueil">  
+    <footer id="footeraccueil">
         <a class="imgcontact" href="https://www.facebook.com/eurotouringseries/" target="_blank"><img id="face" src="images/facebook.png" alt="facebook"></a>
         <a class="imgcontact" href="https://www.youtube.com/channel/UCPSYUnXRxiIHbT_WGqxSAlA" target="_blank"><img id="youtube" src="images/youtube.png" alt="youtube"></a>
         <a class="imgcontact" href="contact.html"><img id="enveloppe" src="images/enveloppe.png" alt="nous contacter" title="nous contacter"></a>
@@ -136,5 +94,6 @@
 
     <script src="javascript/script.js"></script>
 
-    </body>
+</body>
+
 </html>
