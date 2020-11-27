@@ -71,3 +71,11 @@ function intro() {
         document.getElementById('intro').style.display = 'block'
     }
 }
+
+function footer() {
+    if (window.innerheight > document.body.clientHeight) {
+        document.getElementsById('footeraccueril').style.position = 'fixed'
+    } else {
+        document.getElementsById('footeraccueil').style.position = 'absolute'
+    }
+}

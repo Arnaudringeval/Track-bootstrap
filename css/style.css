@@ -11,6 +11,14 @@
     position: relative;
 }
 
+body {
+    background: #cdcdcd;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
 #logoa {
     align-self: center;
     width: 369px;
@@ -103,6 +111,7 @@ header {
 .accueil {
     text-decoration: none;
     color: #318ce7;
+    font-weight: bold;
 }
 
 h1 {
@@ -129,6 +138,7 @@ h1 {
     padding: 0 0 0 0;
     margin: 0 auto 0 auto;
     text-align: center;
+    font-weight: bold;
 }
 
 .namea,
@@ -171,12 +181,14 @@ p {
     height: 400px;
 }
 
-footer {
+#footertout {
     display: flex;
     justify-content: center;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -45px;
+    background-color: #cdcdcd;
+    padding: 5px 0 5px 0;
 }
 
 #footeraccueil {
@@ -224,6 +236,7 @@ main {
     position: relative;
     display: flex;
     justify-content: center;
+    background-color: #cdcdcd;
 }
 
 .maina,
@@ -235,10 +248,12 @@ main {
     justify-content: center;
     flex-direction: column;
     bottom: 40px;
+    background-color: #cdcdcd;
 }
 
 .maina {
-    margin: 400px 0 0 0;
+    margin: 0 0 0 0;
+    top: 400px;
 }
 
 .mainb {
