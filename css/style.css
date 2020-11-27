@@ -48,6 +48,10 @@ header {
     color: #ffffff;
 }
 
+.couleur {
+    background-color: #cdcdcd;
+}
+
 .dropdown-menu {
     border: 0;
     padding: 0;
@@ -68,6 +72,7 @@ header {
     left: 0;
     padding: 0 0 0 0;
     color: #ffffff;
+    width: 100%;
 }
 
 #navbarNavDropdown {

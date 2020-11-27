@@ -25,6 +25,19 @@ $('#titrea').animate({
 }, 500)
 
 
+$('#navbar').click(function() {
+    $('.navbar').toggleClass('couleur');
+    $('.navbar-toggler-icon').toggleClass('imgback');
+})
+
+
+
+
+
+
+
+
+
 
 
 function cache() {
