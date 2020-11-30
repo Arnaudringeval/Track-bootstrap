@@ -29,11 +29,11 @@
                             <div class="dropright active">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les Bases<span class="sr-only">(current)</span></a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" x-placement="right-start" style="position: absolute; transform: translate3d(111px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                    <a class="dropdown-item" href="motorisation.html">motorisation</a>
-                                    <a class="dropdown-item" href="transmission.html">transmission</a>
-                                    <a class="dropdown-item" href="pneus.html">pneus</a>
-                                    <a class="dropdown-item" href="carrosseries.html">carrosseries</a>
-                                    <a class="dropdown-item" href="reglages.html">réglages</a>
+                                    <a class="dropdown-item" href="motorisation.html" id="navbarDropdownMenuLast">motorisation</a>
+                                    <a class="dropdown-item" href="transmission.html" id="navbarDropdownMenuLast">transmission</a>
+                                    <a class="dropdown-item" href="pneus.html" id="navbarDropdownMenuLast">pneus</a>
+                                    <a class="dropdown-item" href="carrosseries.html" id="navbarDropdownMenuLast">carrosseries</a>
+                                    <a class="dropdown-item" href="reglages.html" id="navbarDropdownMenuLast">réglages</a>
                                 </div>
                             </div>
                         </li>
@@ -41,11 +41,11 @@
                         <li class="nav-item active">
                             <div class="dropright active">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">réglements<span class="sr-only">(current)</span></a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" x-placement="right-start" style="position: absolute; transform: translate3d(111px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                    <a class="dropdown-item" href="https://www.ffvrc.fr/fr/disciplines-sur-piste/1-10-1-12-electrique-piste/356-rglt.html">FFVRC</a>
-                                    <a class="dropdown-item" href="https://www.efra.ws/handbook/" target="_blank">EFRA</a>
-                                    <a class="dropdown-item" href="https://ets.redrc.net/rules/" target="_blank">ETS</a>
-                                    <a class="dropdown-item" href="https://www.ifmar.org/rules/" target="_blank">IFMAR</a>
+                                <div id="regleb" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" x-placement="right-start" style="position: absolute; transform: translate3d(111px, 0px, 0px); top: -40px; left: 0px; will-change: transform;">
+                                    <a class="dropdown-item" href="https://www.ffvrc.fr/fr/disciplines-sur-piste/1-10-1-12-electrique-piste/356-rglt.html" id="navbarDropdownMenuLast">FFVRC</a>
+                                    <a class="dropdown-item" href="https://www.efra.ws/handbook/" target="_blank" id="navbarDropdownMenuLast">EFRA</a>
+                                    <a class="dropdown-item" href="https://ets.redrc.net/rules/" target="_blank" id="navbarDropdownMenuLast">ETS</a>
+                                    <a class="dropdown-item" href="https://www.ifmar.org/rules/" target="_blank" id="navbarDropdownMenuLast">IFMAR</a>
                                 </div>
                             </div>
                         </li>
@@ -55,11 +55,11 @@
                         <li class="nav-item dropdown active">
                             <div class="dropright active">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">vidéos<span class="sr-only">(current)</span></a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" x-placement="right-start" style="position: absolute; transform: translate3d(111px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                    <a class="dropdown-item" href="championnatdumonde.html">Championnat du monde</a>
-                                    <a class="dropdown-item" href="championnatdeurope.html">Chapionnat d'Europe</a>
-                                    <a class="dropdown-item" href="ets.html">ETS</a>
-                                    <a class="dropdown-item" href="autres.html">Autres</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" x-placement="right-start" style="position: absolute; transform: translate3d(111px, 0px, 0px); top: -120px; left: 0px; will-change: transform;">
+                                    <a class="dropdown-item" href="championnatdumonde.html" id="navbarDropdownMenuLast">Championnat du monde</a>
+                                    <a class="dropdown-item" href="championnatdeurope.html" id="navbarDropdownMenuLast">Chapionnat d'Europe</a>
+                                    <a class="dropdown-item" href="ets.html" id="navbarDropdownMenuLast">ETS</a>
+                                    <a class="dropdown-item" href="autres.html" id="navbarDropdownMenuLast">Autres</a>
                                 </div>
                             </div>
                         </li>
@@ -79,57 +79,227 @@
         <button id="montrer" ; onclick="affiche();">montrer</button>
         <div id="article1">
             <div id="baybee">
-                <p>Voici la réalisation de la peinture de la
-                    <a class="lientexte" href="https://www.zoo-racing.com/baybee-tc-body-190mm" target="_blank">Baybee</a> Je l'ai prise en standard, donc 0.7mm d'épaisseur, elle existe en 0.5mm ça se déforme plus et certiannes compétitions interdisent
+                <p class="articletuto">Voici la réalisation de la peinture de la
+                    <a class="lientexte" href="https://www.zoo-racing.com/baybee-tc-body-190mm" target="_blank">Baybee</a> Je l'ai prise en standard, donc 0.7mm d'épaisseur, elle existe en 0.5mm ça se déforme plus et certainnes compétitions interdisent
                     cette épaisseur. J'ai raté quelques étapes mais tout sera expliqué. Donc pour ce faire, j'ai utilisé de la peinture Tamiya bombe et pot, donc pinceau, le bleu et violet à la bombe, le noir bleu métal et blanc pinceau (une partie du
                     blanc en bombe, le fond. Scotch de masquage du 3M de 5cm de large pour peinture, ce n'est pas ce qu'il y a de mieux, mais ça passe Donc en premier nettoyage, dégraissage et légère abrasion de la carro avec le coté vert d'une éponge,
                     ça change vraiment tout à l'accroche de la peinture, je ne l'avait pas fait sur la première et elle part très facilement même bien nettoyée dégraissée. Pour les vitres, des caches sont fournis en vitre latérales pleine et coupée pour
                     laisser visible la barre entre la porte avant et arrière, que j'ai choisi. Il manque l'étape avec le masquage complet, le noir est fait en 3 couches.</p>
-                <img src="images/IMG_20200719_010106.jpg" alt="imgtutocarro1">
-                <p>Ensuite je me suis attaqué au lettrage arrière, j'ai voulu faire un teste. Donc j'ai imprimé en version miroir mes lettres, ok le "O" c'est la même chose, puis je l'ai reporté sur le scotch que j'ai collé sur une surface en verre, une
+                <img class="img" src="images/IMG_20200719_010106.jpg" alt="imgtutocarro1">
+                <p class="articletuto">Ensuite je me suis attaqué au lettrage arrière, j'ai voulu faire un teste. Donc j'ai imprimé en version miroir mes lettres, ok le "O" c'est la même chose, puis je l'ai reporté sur le scotch que j'ai collé sur une surface en verre, une
                     assiette pour ma part. Et j'ai détouré tout ça avec un scalpel ou couteau de maquettiste, j'ai pris des mesures et fait des marquage sur la carro pour placer les lettres droites et centrée, en tout cas là ou je voulait les placer.</p>
-                <img src="images/IMG_20200719_163655.jpg" alt="imgtutocarro2">
-                <img src="images/IMG_20200719_163808.jpg" alt="imgtutocarro3">
-                <p>On passe à la calandre, j'ai voulu la faire en tour bleu métal, donc masquage du tour, comme il y a un auto collant pour faire l'intérieur noir, j'ai tout fait en bleu métal, donc un bout de scotch et on découpe les tour, et comme un côté
+                <div class="img">
+                    <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/IMG_20200719_163655.jpg" class="d-block w-100" alt="imgtutocarro2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_20200719_163808.jpg" class="d-block w-100" alt="imgtutocarro3">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <p class="articletuto">On passe à la calandre, j'ai voulu la faire en tour bleu métal, donc masquage du tour, comme il y a un auto collant pour faire l'intérieur noir, j'ai tout fait en bleu métal, donc un bout de scotch et on découpe les tour, et comme un côté
                     était mal fait, je l'enlève et le refait pour que ce soit propre.</p>
-                <img src="images/IMG_20200719_172913.jpg" alt="imgtutocarro4">
-                <img src="images/IMG_20200719_172923.jpg" alt="imgtutocarro4">
-                <p>Résultat</p>
-                <img src="images/IMG_20200719_173039.jpg" alt="imgtutocarro5">
-                <p>Je ne suis pas satisfait, au milieu ce n'est pas propre, donc la technique utilisée est de mettre un très léger coup de scalpel pour juste couper le peinture et avec un cure dent gratter la peinture qui ne va pas rayer la carro, du coup,
+                <div class="img">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/IMG_20200719_172913.jpg" class="d-block w-100" alt="imgtutocarro4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_20200719_172923.jpg" class="d-block w-100" alt="imgtutocarro5">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <p class="articletuto">Résultat</p>
+                <img class="img" src="images/IMG_20200719_173039.jpg" alt="imgtutocarro5">
+                <p class="articletuto">Je ne suis pas satisfait, au milieu ce n'est pas propre, donc la technique utilisée est de mettre un très léger coup de scalpel pour juste couper le peinture et avec un cure dent gratter la peinture qui ne va pas rayer la carro, du coup,
                     c'est bien mieux.</p>
-                <img src="images/IMG_20200719_173605.jpg" alt="imgtutocarro6">
-                <p>Je repart sur le masquage des parties blanches de l'arrière, là aussi je m'y suis repris plusieurs fois, pas facile de faire la même ligne des deux côtés.</p>
-                <img src="images/IMG_20200719_181205.jpg" alt="imgtutocarro7">
-                <p>On passe au bas de caisse latéraux, là juste un bout de scotch dans le long posé droit et c'est bon, étape pas prise en photo, il y a juste le résultat.</p>
-                <img src="images/IMG_20200719_190145.jpg" alt="imgtutocarro8">
-                <img src="images/IMG_20200719_190203.jpg" alt="imgtutocarro9">
-                <p>Et pareil, on refait propre les endroits on la peinture est passée sous le scotch. Et on fait le masquage des détails qui seront fait en bande 5mm de large découpée dans le scotch. pour les cotés, je mets simplement 4 points sur la carro
+                <img class="img" src="images/IMG_20200719_173605.jpg" alt="imgtutocarro6">
+                <p class="articletuto">Je repart sur le masquage des parties blanches de l'arrière, là aussi je m'y suis repris plusieurs fois, pas facile de faire la même ligne des deux côtés.</p>
+                <img class="img" src="images/IMG_20200719_181205.jpg" alt="imgtutocarro7">
+                <p class="articletuto">On passe au bas de caisse latéraux, là juste un bout de scotch dans le long posé droit et c'est bon, étape pas prise en photo, il y a juste le résultat.</p>
+                <div class="img">
+                    <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/IMG_20200719_190145.jpg" class="d-block w-100" alt="imgtutocarro8">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_20200719_190203.jpg" class="d-block w-100" alt="imgtutocarro9">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <p class="articletuto">Et pareil, on refait propre les endroits on la peinture est passée sous le scotch. Et on fait le masquage des détails qui seront fait en bande 5mm de large découpée dans le scotch. pour les cotés, je mets simplement 4 points sur la carro
                     pour mes angles et on découpe les pointes au scalpel. Pour les lignes droites, au feeling, en voyant directement comme ça fait, c'est plus facile comme ça et pour le au dessus en dessous, je ne m'en occupe, ce sera au découpage.</p>
-                <img src="images/IMG_20200719_211031.jpg" alt="imgtutocarro10">
-                <img src="images/IMG_20200719_211051.jpg" alt="imgtutocarro11">
-                <p>Là, tout est masqué, on va passer à la peinture de l'ensemble avec les dégradés et le mouchetage au bleu métal dans le bleu.</p>
-                <img src="images/IMG_20200719_213059.jpg" alt="imgtutocarro12">
-                <img src="images/IMG_20200719_213102.jpg" alt="imgtutocarro13">
-                <img src="images/IMG_20200719_213111.jpg" alt="imgtutocarro14">
-                <img src="images/IMG_20200719_213924.jpg" alt="imgtutocarro15">
-                <img src="images/IMG_20200719_214756.jpg" alt="imgtutocarro16">
-                <img src="images/IMG_20200719_214807.jpg" alt="imgtutocarro17">
-                <img src="images/IMG_20200719_221102.jpg" alt="imgtutocarro18">
-                <p>On a fini le bleu et le violet, on enlève le masquage de tout ce qui sera blanc et on va passer au blanc avec la bonne nouvelle qu'il n'y en a plus assez dans la bombe, pas grave, il y a le pot. Mais comme il était assez tard et plus beaucoup
+                <div class="img">
+                    <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/IMG_20200719_211031.jpg" class="d-block w-100" alt="imgtutocarro10">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_20200719_211051.jpg" class="d-block w-100" alt="imgtutocarro11">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <p class="articletuto">Là, tout est masqué, on va passer à la peinture de l'ensemble avec les dégradés et le mouchetage au bleu métal dans le bleu.</p>
+                <div class="img">
+                    <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators5" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators5" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators5" data-slide-to="5"></li>
+                            <li data-target="#carouselExampleIndicators5" data-slide-to="6"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/IMG_20200719_213059.jpg" class="d-block w-100" alt="imgtutocarro12">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_20200719_213102.jpg" class="d-block w-100" alt="imgtutocarro13">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_20200719_213111.jpg" class="d-block w-100" alt="imgtutocarro14">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_20200719_213924.jpg" class="d-block w-100" alt="imgtutocarro15">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_20200719_214756.jpg" class="d-block w-100" alt="imgtutocarro16">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_20200719_214807.jpg" class="d-block w-100" alt="imgtutocarro17">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_20200719_221102.jpg" class="d-block w-100" alt="imgtutocarro18">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <p class="articletuto">On a fini le bleu et le violet, on enlève le masquage de tout ce qui sera blanc et on va passer au blanc avec la bonne nouvelle qu'il n'y en a plus assez dans la bombe, pas grave, il y a le pot. Mais comme il était assez tard et plus beaucoup
                     de lumière, j'ai mal nettoyé les poussières de peinture bleue et violette déposée un peu partout sur la carro donc on en voit sur le capot. je ne peut rien y faire, à savoir pour la prochaine fois et faire plus attention.</p>
-                <img src="images/IMG_20200719_222801.jpg" alt="imgtutocarro19">
-                <p>Le blanc est terminé, on passe aux détails du capot, j'était un peu concentré pour ne pas me rater sur les passages dessus dessous et pour le gratage des débordements de peinture qui ont étés nombreux. Comme tout ça est fait au pinceau,
+                <img class="img" src="images/IMG_20200719_222801.jpg" alt="imgtutocarro19">
+                <p class="articletuto">Le blanc est terminé, on passe aux détails du capot, j'était un peu concentré pour ne pas me rater sur les passages dessus dessous et pour le gratage des débordements de peinture qui ont étés nombreux. Comme tout ça est fait au pinceau,
                     il n'y a pas de changement de teinte sur le blanc et j'avais fait de belle couches autour des détails ce qui à fait les coulures mais au final ça fait propre.</p>
-                <img src="images/IMG_20200720_154249.jpg" alt="imgtutocarro20">
-
-                <img src="images/IMG_20200720_162108.jpg" alt="imgtutocarro21">
-
-                <img src="images/IMG_20200720_162124.jpg" alt="imgtutocarro22">
-                <p>Et voilà, reste à enlever le film protecteur et mettre les autocollants et c'est tout bon. Il y a des défauts mais quand on roule, ça ne se voit pas. Petit détail, la lame à l'avant est blanche alors que ça aurait été beaucoup plus joli
+                <div class="img">
+                    <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/IMG_20200720_154249.jpg" class="d-block w-100" alt="imgtutocarro20">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_20200720_162108.jpg" class="d-block w-100" alt="imgtutocarro21">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_20200720_162124.jpg" class="d-block w-100" alt="imgtutocarro22">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <p class="articletuto">Et voilà, reste à enlever le film protecteur et mettre les autocollants et c'est tout bon. Il y a des défauts mais quand on roule, ça ne se voit pas. Petit détail, la lame à l'avant est blanche alors que ça aurait été beaucoup plus joli
                     en noir car en noir on ne voit pas cette partie sur la piste ce qui est gênant pour placer la voiture correctement.</p>
-                <img src="images/IMG_20200720_194315.jpg" alt="imgtutocarro23">
-                <img src="images/IMG_20200720_194356.jpg" alt="imgtutocarro24">
+                <div class="img">
+                    <div id="carouselExampleIndicators7" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators7" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators7" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/IMG_20200720_194315.jpg" class="d-block w-100" alt="imgtutocarro23">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_20200720_194356.jpg" class="d-block w-100" alt="imgtutocarro24">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators7" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators7" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -138,7 +308,7 @@
         <div id="article2">
             <div id="hw10bl120">
                 <p>Ici le but est de raccourcir les fils et les câbles d'un contrôleur pour minimiser les pertes dûes à l'effet joule et la résistance des fils et câbles.</p>
-                <img src="images/IMG_20200105_130240.jpg" alt="vario1">
+                <img class="img" src="images/IMG_20200105_130240.jpg" alt="vario1">
             </div>
         </div>
         <footer id="footertout">

@@ -60,7 +60,11 @@ header {
 }
 
 #navbarDropdownMenuLink {
-    padding: 0;
+    padding: 8px 0 8px 0;
+}
+
+#navbarDropdownMenuLast {
+    padding: 8px 24px 8px 24px;
 }
 
 .dropdown-item {
@@ -176,6 +180,11 @@ p {
     line-height: normal;
 }
 
+.articletuto {
+    width: 365px;
+    align-self: center;
+}
+
 .playlist {
     width: 100%;
     height: 400px;
@@ -261,10 +270,11 @@ main {
     bottom: 40px;
 }
 
-img {
+.img {
     margin: 0 auto 0 auto;
     width: 365px;
     height: auto;
+    border: 2px solid #318ce7;
 }
 
 .intromoteurs {
@@ -313,7 +323,7 @@ img {
     font-weight: bold;
 }
 
-#envoieform {
+#envoi {
     background-color: #cdcdcd;
     border-radius: 10px;
     border: 0 solid;
@@ -323,36 +333,112 @@ img {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75)
 }
 
-#formulaire {
+#erreur {
+    display: none;
+    align-self: center;
+    color: red;
+    font-weight: bold;
+    width: 250px;
+}
+
+#pseudo {
+    border: 0 solid;
+    padding: 5px 0 5px 2px;
+    margin: 8px 0 8px 0;
+}
+
+#sujet {
+    border: 0 solid;
+    padding: 5px 0 5px 2px;
+    margin: 8px 0 8px 0;
+}
+
+#mail {
+    border: 0 solid;
+    padding: 5px 0 5px 2px;
+    margin: 8px 0 8px 0;
+}
+
+#message {
+    border: 0 solid;
+    padding: 5px 0 0 2px;
+    margin: 8px 0 8px 0;
+}
+
+form {
     z-index: 0;
     margin: 30px auto 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     bottom: 40px;
-    width: 200px;
+    width: 250px;
 }
 
-#nom {
-    padding: 5px 0 5px 0;
-    border: 0 solid;
-}
 
-#email {
-    padding: 5px 0 5px 0;
-    border: 0 solid;
-}
+/* TABLETTES */
 
-#sujet {
-    padding: 5px 0 5px 0;
-    border: 0 solid;
-}
-
-#message {
-    padding: 5px 0 0 0;
-    border: 0 solid;
-}
-
-.form {
-    padding: 8px 0 0 0;
+@media screen and (min-width: 690px) and (max-width: 992px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    #navbar {
+        width: 50%;
+    }
+    .namea {
+        display: block;
+        font-weight: bold;
+    }
+    #logoa,
+    #logob {
+        margin: -20px 0 0 0;
+    }
+    #titrea {
+        margin: 0 0 0 0;
+    }
+    #titreb {
+        display: block;
+    }
+    #changer {
+        display: none;
+    }
+    #intro {
+        position: inherit;
+        background-color: #318ce7;
+        border-radius: 10px 10px 0 0;
+        min-height: inherit;
+    }
+    .playlist {
+        padding: 0 0 0 0;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 270px 10px 0 10px;
+    }
+    #logolien {
+        order: inherit;
+    }
+    .maina {
+        width: 650px;
+        margin: 270px auto 0 auto;
+    }
+    img {
+        width: 650px;
+        height: auto;
+    }
+    #montrer,
+    #montrer2 {
+        width: 650px;
+    }
+    #h3autre {
+        margin: 0 auto 0 auto;
+    }
+    p {
+        padding: 10px 0 10px 0;
+    }
+    #formulaire {
+        margin: 90px auto 0 auto;
+    }
 }
