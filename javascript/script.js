@@ -1,3 +1,18 @@
+$(window).scroll(function() {
+    let scroll = $(window).scrollTop();
+    if (scroll >= 200) {
+        $("#top").addClass("fixed");
+        $("#top").css('display', 'block');
+        $("#top").removeClass("invisible");
+    } else {
+        $("#top").removeClass("fixed");
+        $("#top").css('diplay', 'none');
+        $("#top").addClass("invisible");
+    }
+})
+
+
+
 if (window.innerWidth < 690) {
     $('#logoa').animate({
         marginLeft: '500px'
@@ -27,7 +42,7 @@ if (window.innerWidth < 690) {
 }
 
 
-if (window.innerWidth < 1024 && window.innerWidth > 690) {
+if (window.innerWidth < 992 && window.innerWidth > 690) {
     $('#logoa').fadeOut(1000)
 
     $('#logoa').fadeIn(250)
@@ -64,8 +79,47 @@ if (window.innerWidth < 1024 && window.innerWidth > 690) {
         fontSize: '35px'
     }, 200)
 
+}
+
+if (window.innerWidth > 992) {
+    $('#logoa').fadeOut(1000)
+
+    $('#logoa').fadeIn(250)
+
+    $('#titrea').animate({
+        fontSize: '52px'
+    }, 800)
+
+    $('#titrea').animate({
+        fontSize: '83px'
+    }, 600)
+
+    $('#titrea').animate({
+        fontSize: '67px'
+    }, 400)
+
+    $('#titrea').animate({
+        fontSize: '75px'
+    }, 200)
+
+    $('.namea').animate({
+        fontSize: '24px'
+    }, 800)
+
+    $('.namea').animate({
+        fontSize: '39px'
+    }, 600)
+
+    $('.namea').animate({
+        fontSize: '30px'
+    }, 400)
+
+    $('.namea').animate({
+        fontSize: '35px'
+    }, 200)
 
 }
+
 
 
 
