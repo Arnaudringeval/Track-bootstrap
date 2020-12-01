@@ -274,7 +274,7 @@ main {
     margin: 0 auto 0 auto;
     width: 365px;
     height: auto;
-    border: 2px solid #318ce7;
+    border: 3px solid #318ce7;
 }
 
 .intromoteurs {
@@ -422,11 +422,15 @@ form {
     }
     .maina {
         width: 650px;
-        margin: 270px auto 0 auto;
+        margin: 230px auto 0 auto;
+        top: 0;
     }
-    img {
+    .img {
         width: 650px;
         height: auto;
+    }
+    .articletuto {
+        width: 650px
     }
     #montrer,
     #montrer2 {
